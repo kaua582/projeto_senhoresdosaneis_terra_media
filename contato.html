@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="titulo_top">
+            <h1>O Senhor dos Anéis! - Um filme massa</h1>
+            <h2>Uma das trilogias mais famosas pneumoultramicroscopicossilico<wbr>vulcanoconiótico</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sinopse.html">Sinopse</a>
+                <a href="imagemfilme.html">Imagem do filme</a>
+                <a href="personagens.html">Personagens principais</a>
+                <a href="informacoes.html">Informações</a>
+                <a href="ordem.html">Ordem dos Filmes</a>
+                <a href="curiosidades.html">Curiosidades</a>
+                <a href="impacto.html">Impacto Cultural</a>
+                <a href="contato">Contato</a>
+            </nav>
+        </div>
+        <h2 class="titulo_secundario">Entre em contato:</h2>
+        <form action="processa.php" method="POST" autocomplete="off">
+            <label for="nomepessoa"> Nome:</label>
+            <input type="text" name="nomepessoas"
+            id="nomepessoa" minlength="3" maxlength="15" require placeholder=""><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <label for="ano">Ano de Nascimento:</label>
+            <input type="number" id="ano" name="ano" max="2026" min="1900" placeholder="Informe seu ano de nascimento">
+
+            <label for="telefone">Telefone</label>
+            <input type="number" id="telefone" name="telefone" placeholder="Informe seu telefone:">
+            
+            <label for="github">Informe seu Github:</label>
+            <input type="url" name="github" id="github" placeholder="Informe seu github:"><br><br>
+
+            <label for="senha">Informe sua senha:</label>
+            <input type="password" id="senha" name="senha"><br><br>
+
+            <label for="arquivo">Anexe um arquivo</label>
+            <input type="file" id="arquivo" name="arquivo">
+
+            <label for="color">Escolha uma cor:</label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <fieldset>
+                <legend>Campos de tempo</legend>
+                <label for="data">Informe a data</label>
+                <input type="data" id="data" name="data">
+
+                <label for="mes">Informe o mês</label>
+                <input type="month" id="mes" name="mes">
+
+                <label for="semana">Informe a semana</label>
+                <input type="week" id="semana" name="semana"><br><br>
+
+                <label for="hora">Informe a hora</label>
+                <input type="time" id="hora" name="hora"><br><br>
+
+                <label for="datahora">Data e hora atual</label>
+                <input type="datetime-local" id="datahora" name="datahora">
+            </fieldset>
+                <legend>Qual o seu filme favorito?</legend>
+                <label for="pesquisa">Pesquisa</label>
+                <input type="search" id="pesquisa" name="pesquisa">
+
+                <label for="descricao">Informe aqui o que você gosta nos filmes:</label>
+                <textarea cols="10" rows="5" name="descricao" id="descricao"></textarea><br><be></be>
+
+                <fieldset>
+                <label for="filme1"><input type="radio" name="filme" id="filme1" value="Filme 1">Filme 1</label>
+
+                <label for="filme2"><input checked type="radio" name="filme" id="filme2" value="Filme 2">Filme 2</label>
+                
+                <label for="filme3"><input type="radio" name="filme" id="filme3" value="Filme 3">Filme 3</label>
+            </fieldset><br><br>
+
+            <label for="nivel">Escolha o nível</label>
+            <input type="range" max="10" min="1" id="nivel">
+
+            <select>
+                <option value="filme 1">Filme 1</option>
+                <option value="filme 2">Filme 2</option>
+                <option velue="filme 3">Filme 3</option>
+            </select>
+
+            <select id="lista_suspensa" name="lista">
+                <optgroup label="Teste de legenda no combobox">
+                    <option value="Teste 1">Teste 1</option>
+                    <option value="Teste 2">Teste 2</option>
+                    <option value="Teste 3">Teste 3</option>
+                </optgroup>
+                <optgroup label="Teste de elgenda no combobox 2">
+                    <option value="Teste 4">Teste 4</option>
+                    <option value="Teste 5">Teste 5</option>
+                    <option value="Teste 6">Teste 6</option>
+            </select>
+            <fieldset>
+                <legend></legend>Desenvolvimento para internet</legend>
+                <label><input type="checkbox" name="php" value="php">PHP</label>
+                <label><input type="checkbox" name="html5" value="html5">HTML5</label>
+                <label><input type="checkbox" name="css" value=css>CSS</label>
+                <label><input type="checkbox" name="js" value="js">JAVASCRIPT</label>
+            </fieldset><br><br>
+
+            <!-- Datalist possíveis ganhadores da copa do mundo 26-->
+            <input type="text" id="busca_datalist" list="paises">
+            <datalist id="paises">
+                <option>Brasil</option>
+                <option>França</option>
+                <option>Argentina</option>
+                <option>Alemanha</option>
+                <option>Inglaterra</option>
+                <option>Espanha</option>
+            </datalist><br><br>
+        
+            <audio controls muted autopla loop>
+                <source src="audio/musica.mp3" type="audio/mp3">
+                Navegador não é compatível para executar áudio!
+            </audio><br><br>
+
+            <video controls muted autopla loop poster="">
+                <source src="videos/videoteste.mp4" type="video/mp4">
+            </video>
+
+            <iframe width="560" heigh="315" src="https://www.youtube.com/embed/mk1gcdv27ro?si=9t06itg8Gg4dyd3" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipoboard-write;encrypted-media; gyroscope; picture-in-picture; web-sahre" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857717.038780049!2d-54.41447426710707!3d-24.576990456039294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d15547bda185%3A0xd0cbc7fb7cc4a1a6!2sUNIPAR%20-%20Universidade%20Paranaense%20-%20Cascavel!5e0!3m2!1spt-BR!2sbr!4v1774307409922!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+
+        </form>
+</body>
+</html>
