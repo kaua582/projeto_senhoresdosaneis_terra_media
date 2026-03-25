@@ -19,7 +19,7 @@
                 <a href="ordem.html">Ordem dos Filmes</a>
                 <a href="curiosidades.html">Curiosidades</a>
                 <a href="impacto.html">Impacto Cultural</a>
-                <a href="contato">Contato</a>
+                <a href="contato terra.html">Contato</a>
             </nav>
         </div>
         <h2 class="titulo_secundario">Contato com a Terra Média</h2>
@@ -28,7 +28,7 @@
         <p>Envie sua mensagem diretamente para o Conselho de Elrond</p>
 
         <label for="nomepessoa">Nome na Terra Média:</label>
-        <input type="text" name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15" placeholder="Ex: Aragorn"><br><br>
+        <input type="text" name="nomepessoa" id="nomepessoa" minlength="3" maxlength="15" placeholder="Ex: Aragorn" required><br><br>
         
         <label for="email">Corvo Eletrônico(Email):</label>
         <input type="email" name="email" id="email" required><br><br>
@@ -95,7 +95,15 @@
             <label for="color">Cor do seu manto:</label>
             <input type="color" id="color" name="color"><br><br>
 
-            <!--video pausado em 1:10-->
+            <label for=data>Data da sua jornada:</label>
+            <input type="date" id="data" name="data"><br><br>
+
+            <label for="arquivo">Anexe uma relíquia:</label>
+            <input type="file" id="arquivo" name="arquivo"><br><br>
+
+            <label for="mensagem">Mensagem ao Conselho:</label><br>
+            <textarea cols="30" rows="5" id="mensagem" name="mensagem" placeholder="Escreva  sua missão..."></textarea><br><br>
+
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
         </form>
