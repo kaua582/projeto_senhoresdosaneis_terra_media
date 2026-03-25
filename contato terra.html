@@ -38,21 +38,23 @@
         
         <fieldset>
             <legend>Qual é a sua raça?</legend>
-            <label for="Humano"><input type="radio" name="raca" id="humano" value="Humano">Humano</label>
+            <label for="humano"><input type="radio" name="raca" id="humano" value="humano">Humano</label>
             
-            <label for="Elfo"><input type="radio" name="raca" id="elfo" value="Elfo">Elfo</label>
+            <label for="elfo"><input type="radio" name="raca" id="elfo" value="elfo">Elfo</label>
 
-            <label for="Anao"><input type="radio" name="raca" id="anao" value="Anao">Anão</label>
+            <label for="anao"><input type="radio" name="raca" id="anao" value="anao">Anão</label>
 
-            <label for="Hobbit"><input type="radio" name="raca" id="hobbit" value="Hobbit">Hobbit</label>
+            <label for="hobbit"><input type="radio" name="raca" id="hobbit" value="hobbit">Hobbit</label>
         </fieldset>
         
-           Escolha seu filme favorito: <select>
-                <option value="a sociedade do anel">A Sociedade do Anel</option>
-                <option value="as duas torres">As Duas Terras</option>
-                <option value="o retorno do rei">O Retorno do Rei</option>
+            <label for="filme">Escolha seu filme favorito:</label>
+           <select>
+                <option value="a sociedade do anel" id="filme">O Retorno do Rei</option>
+                <option value="as duas torres" id="filme">As Duas Terras</option>
+                <option value="o retorno do rei" id="filme">A Sociedade do Anel</option>
             </select><br><br>
-            Escolha um local da Terra Média: <select id="lista_suspensa" name="lista">
+            <label for="lista_suspensa">Escolha um local da Terra Média:</label>
+            <select id="lista_suspensa" name="lista">
                 <optgroup label="Reino dos Homens">
                     <option value="Gondor">Gondor</option>
                     <option value="Rohan">Rohan</option>
@@ -65,8 +67,35 @@
                     <option value="Mordor">Mordor</option>
                     <option value="Condado">Condado</option>
                 </optgroup>
-            </select>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Suas habilidades</legend>
+                <label for="espada"><input type="checkbox" name="habilidade" id="espada" value="espada">Espada</label>
+
+                <label for="arco"><input type="checkbox" name="habilidade" id="arco" value="arco">Arco e Flecha</label>
+
+                <label for="magia"><input type="checkbox" name="habilidade" id="magia" value="magia">Magia</label>
+
+                <label for="furtividade"><input type="checkbox" name="habilidade" id="furtividade" value="furtividade">Furtividade Hobbit</label>
+            </fieldset><br>
             
+            Nível de coragem (1 a 10):<label for="nivel"></label>
+            <input type="range" max="10" min="1" id="nivel"><br><br>
+
+            <label for="reinos">Seu reino de origem:</label>
+            <input type="text" id="origem" list="reinos"></input>
+            <datalist id="reinos">
+                <option>Gondor</option>
+                <option>Rohan</option>
+                <option>Mondor</option>
+                <option>Condado</option>
+            </datalist><br><br>
+            
+            <label for="color">Cor do seu manto:</label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <!--video pausado em 1:10-->
         <button type="reset">Limpar</button>
         <button type="submit">Enviar</button>
         </form>
